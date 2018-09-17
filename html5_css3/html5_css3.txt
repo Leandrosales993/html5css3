@@ -1,0 +1,52 @@
+Material de apoio:
+http://professorjosedeassis.com.br/curso-basico-html5-css3/
+html/css/js -> frontend
+
+40 horas
+html 5
+css 4
+SEO (Search Engine Optimization)
+
+mini projeto
+
+
+__________________________________________________________
+Preparando o ambiente de desenvolvimento:
+- Editor de textos (sublime + emmet)
+Teclas de atalho:
+html:5 <ctrl e> (criar um template básico)
+
+- Navegador de Internet
+- Criar um repositório no GITHUB
+- clonar o repositório (git clone)
+
+__________________________________________________________
+Estrutura do site:
+public_html -> raiz
+index.html (principal "home")
+
+
+__________________________________________________________
+<!-- --> (comentários)
+<html></html>
+<!-- heading tags -->
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<h6></h6>
+<p>
+__________________________________________________________
+SEO
+
+1) Domínio/url
+2) Título (até 50 caracteres)
+3) Meta Tag description (até 160 caracteres)
+4) heading tags (subtítulos)
+*** usar apenas 1 <h1></h1> por página
+*** usar hierarquia nos subtítulos
+5) Parágrafos
+
+
+- desempenho
