@@ -2,79 +2,90 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<!--favicon-->
-	<link rel="icon" href="imagens/favicon.png">
-	<title>Home - html5 css3</title>
-	<!--SEO Importante-->
-	<meta name= description content="Aprenda html5 e css3 de forma simples e prático">
-	<!--A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0,">
+	<!-- favicon -->
+	<link rel="icon" href="imagens/favicon.png"> 
+	<title>Livraria</title>
+
+	<!-- SEO Importante -->
+	<meta name = "description" content = "Livraria Leandro">
+	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
+	<meta name="viewport" content="width=device-width,  initial-scale=1.0">
+	<!-- Link com a folha de estilo -->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- CDN Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-		
 
 <body>
-	<!--estrutura principal-->
+	<!-- estrutura principal -->
 	<div id="main">
 
-		<!--cabeçalho-->
+		<!-- cabeçalho -->
 		<header>
-			<img src="imagens/logotipo.png" alt="html5 css3">
+			<a href="index.html"><img src="imagens/biblioteca-de-livros.png" alt="Logotipo do site" title="Livraria"></a>
 		</header>
 
-		<!--menu-->
-		<nav>
-			<!--ul>li*4>a-->
+		<!-- menu -->
+		<nav class="Menu">
+			<!-- Classe usada para fixar menu no JS -->
+		<!-- &#9776 (desenho 3 linhas horizontais-->
+		<a href="#" class="Mobile">&#9776; Menu</a>
+			<!-- ul>li*4>a -->
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Sobre</a></li>
-				<li><a href="#">Conteúdo</a>
-					<ul>
-						<li><a href="#">html</a></li>
-						<li><a href="#">css</a></li>
-						<li><a href="#">javascript</a></li>
-					</ul>	
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="#" class="Detalhes">Conteúdo </a>
+			<ul>
+						<li><a href="conteudo/ler.html">leitura</a></li>
+                        <li><a href="conteudo/beneficio.html">beneficio</a></li>
+						<li><a href="https://www.youtube.com/playlist?list=PLbEOwbQR9lqyuy7U1YjGgBv0x2Hzuw569" target="_blank">javascript</a></li>
+					</ul>
 				</li>
-				<li><a href="#">Contato</a></li>
+				<li><a href="contato.html">Contato</a></li>
 			</ul>
 		</nav>
 
-		<!--conteúdo-->
+		<!-- conteúdo -->
 		<section id="banner">
-			<img src="imagens/banner.jpg" alt="curso html5 css3">
-			<h1>Primeiros passos com HTML5+CSS3</h1>
+			<img src="imagens/banner.jpg" alt="Biblioteca de Livros">
+			<h1>A importância da Livraria para leitores e estudantes </h1>
 		</section>
 
 		<section id="heading">
-			<h2>Aprenda HTML5 e CSS3 de forma simples e prática desenvolvendo um site responsivo do "zero"</h2>
+			<h2>Nas sociedades contemporâneas, a <span id="leitura">leitura</span> (em contexto escolar, profissional ou de lazer) assume um papel importantíssimo na promoção do desenvolvimento cultural, científico, político e, consequentemente, económico dos povos e dos indivíduos. Por isso, tanto se tem reflectido sobre a forma de incentivar e motivar as pessoas para a leitura, em especial as crianças e os jovens, que ainda não criaram e enraizaram esse hábito tão <span id="enriquecedor">enriquecedor</span>.</h2>
 		</section>
 
 		<section id="destaque">
-			<!--bloco1-->
-			<img src="imagens/natureza1.png" alt="mobile">
-			<h2>Destaque 1</h2>
-			<p>lorem ipsum lorem ipsum</p>
+			<!-- bloco 1 -->
+			<img src="imagens/o-trivium.png" alt="Livro o Trivium">
+			<h2>O Trivium - As artes liberais da lógica, da gramática e da retórica</h2>
+			<p>O Trivium, da Irmã Miriam Joseph, resgata a abordagem integrada dos componentes da ciência da linguagem praticada na Idade Média e conduz o leitor por uma esclarecedora exposição da lógica, da gramática e da retórica. Mais importante do que o domínio estes assuntos, este livro pretende fornecer as ferramentas necessárias para o aperfeiçoamento da inteligência.</p>
 			<a href="#">botão 1</a>
-
-			<!--bloco2-->
-			<img src="imagens/natureza2.png" alt="responsivo">
-			<h2>Destaque 2</h2>
-			<p>lorem ipsum lorem ipsum</p>
-			<a href="#">botão 2</a>
 			
-			<!--bloco3-->
-			<img src="imagens/natureza3.png" alt="frontend">
-			<h2>Destaque 3</h2>
-			<p>lorem ipsum lorem ipsum</p>
+			<!-- bloco 2 -->
+			<img src="imagens/suma-gramatical.png" alt="Livro Suma Gramática">
+			<h2>Suma Gramatical da Língua Portuguesa - Gramática geral e avançada</h2>
+			<p>A Suma Gramatical da Língua Portuguesa é uma gramática com dois importantes diferenciais: tem amparo em escritores não literários e fundamento filosófico, dirigindo-se tanto ao interessado em conhecer melhor sua própria língua, quanto ao estudioso que pode beneficiar-se de uma abordagem teórica pouco comum. um gramático de sólida formação aristotélico-tomista, ou seja, um autor firmemente comprometido com o rigor lógico, com a precisão conceitual e com a clareza da linguagem.
+
+</p>
+			<a href="#">botão 2</a>
+
+			<!-- bloco 3 -->
+			<img src="imagens/personae.png" alt="Livro Personae">
+			<h2>Personae - Grandes Personagens da Literatura Brasileira - 2ª EdiçãoS</h2>
+			<p>A exemplo do que ocorre nas melhores literaturas de todo o mundo, a ficção brasileira tem produzido personagens marcantes, suscetíveis de sinalizar a maneira de ser da gente que as inspirou. Essa coletânea, para a qual colaboraram especialistas em literatura brasileira de reconhecida competência, propõe-se como uma reflexão inspirada por algumas dessas personagens. E, ao refletir sobre elas, estimula a leitura ou releitura das obras que as introduziram, marcos da cultura nacional.
+</p>
 			<a href="#">botão 3</a>
+			
 		</section>
-		
-		<!--rodapé-->
+
+		<!-- rodapé -->
 		<footer>
-			<P>©2018 - Aluno Leandro</P>
+			<p>©2018 - Leandro</p>			
 		</footer>
-		
 	</div>
-	
+<script src="js/menuresponsivo.js"></script>
+<script src="js/fixamenu.js"></script>
+<script src="js/removeclick.js"></script>	
 </body>
 </html>

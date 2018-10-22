@@ -1,8 +1,8 @@
 /**
 * Estudo dos menus
 * Menu drop (submenu)
-* @author Leandro
-* Data 01/10/2018
+* @author Professor José de Assis
+* data 01/10/2018
 */
 
 body{
@@ -15,12 +15,8 @@ nav{
 	background-color: #000616;
 }
 
-/*nav ul li{
-	float: left;
-}
-*/
 /*
-.primeiro{
+.Primeiro{
 	float: left;
 }
 */
@@ -28,10 +24,11 @@ nav{
 nav ul{
 	list-style: none;
 	padding: 0px;
-	margin: 0px
+	margin: 0px;
 }
 
-/* Usando o sinal ">" o estilo é aplicado somente ao caminho indicado, não estilizando os demais <li> do segundo nível. */
+/* Usando o sinal ">" o estilo é aplicado somente ao caminho
+indicado, não estilizando os demais <li> do segundo nível. */
 
 nav > ul > li{
 	float: left;
@@ -51,11 +48,15 @@ nav ul li a:hover{
 }
 
 nav li ul{
-	display: none;/*esconder um conteúdo*/
-
+	display: none; /* esconder um conteúdo */
 }
 
 nav li:hover ul{
-	display: block;/*exibir um conteúdo em bloco*/
+	display: block; /* exibir um conteúdo em bloco*/
 	position: absolute;
 }
+
+
+
+
+

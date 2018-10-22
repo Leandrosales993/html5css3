@@ -1,6 +1,6 @@
 /**
 * Exemplo de layout
-* @author - Leandro
+* @author - Professor José de Assis
 * Data 26/09/2018
 */
 
@@ -18,13 +18,13 @@ body{
 	padding-top: 200px;
 	background-attachment: fixed;
 	background-size: cover;
-	background-position: center; 
+	background-position: center;
 }
 
 .Layout p{
 	text-align: center;
-	color: #ffff00;
-	font-size: 2.5em; 
+	color: #e3e4e5;
+	font-size: 2.5em;
 }
 
 .DivTexto{
@@ -32,7 +32,7 @@ body{
 }
 
 .Destaque{
-	padding: 150px 0pc 150px 0px;/*box-model*/
+	padding: 150px 0px 150px 0px; /*box model*/
 	max-width: 1024px;
 	margin: 0 auto;
 }

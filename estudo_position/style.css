@@ -1,6 +1,6 @@
 /**
-* Estudo do posicionamento do elemento (position)
-* @author Leandro
+* Estudo do posicionamento do elementos (position)
+* @author Professor José de Assis
 * data 26/09/2018
 */
 
@@ -10,8 +10,8 @@ body{
 
 #static{
 	position: static;
-	padding: 50px;/*box-model - em volta do elemento*/
-	background-color: #00ffff;
+	padding: 50px; /* box-model - em volta do elemento */
+	background-color: #00ffff; 
 }
 
 #relative1{
@@ -36,7 +36,7 @@ body{
 	width: 600px;
 	height: 400px;
 	background-color: #ffff00;
-	padding: 20px;
+	padding: 20px;	
 }
 
 #absolute{
@@ -58,5 +58,4 @@ body{
 	color: #ffffff;
 	right: 0px;
 	bottom: 0px;
-
 }
