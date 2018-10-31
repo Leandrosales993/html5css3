@@ -408,6 +408,9 @@ header img{
 	#heading h2{
 		font-size: 1.2em;
 	}
+	#github{
+		text-align: center;
+	}
 
 	/*** blocos ***/
 	#destaque{
