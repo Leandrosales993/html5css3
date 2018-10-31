@@ -44,8 +44,8 @@ header img{
 
 nav{
 	width: 100%;
-	max-width: 1024px;	
-	position: absolute;
+	max-width: 1024px;
+	position: absolute;	
 	z-index: 3;
 }
 
@@ -53,19 +53,16 @@ nav ul{
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
-	
-	
-
 }
 
 nav > ul > li{
 	float: left;
-	width: 24.903%; /* 4 elementos do menu primário */
-	border-right: 1px solid #cc470d;
+	width: 25%; /* 4 elementos do menu primário */
+	
 }
 
 nav > ul > li > a{
-	font-size: 1.125em;
+	font-size: 1.125em;/*Aumenta o tamanho da fonte do Menu primario*/
 }
 
 nav ul li a{
@@ -73,13 +70,15 @@ nav ul li a{
 	color: #ffffff;
 	padding: 15px;
 	display: block;
-	text-align: center; 
+	text-align: center/*Centralizando*/;
 	background-color: #e15a1f;
+    border: 1px solid #ffffff;/*Separando os conteúdos do menu*/ 
 }
 
 nav ul li a:hover{
 	background-color: #cc470d;
 	transition: all 0.27s; /* efeito transição (0 a 1) */
+
 }
 
 nav li ul{
@@ -110,20 +109,25 @@ nav li:hover ul{
 /* Classe usada pelo JS para fixar o menu */
 .Fixar{
 	position: fixed;
-	top: 0;	
+	top: 0;
+	
 }
 
-/******* Conteúdo em Destaque - home ******/
-
+/**************  Conteúdo em Destaque - home *****************/
 /*** banner ***/
 #banner{
 	margin-top: 75px;
 	max-width: 1024px;
 	height: 350px;
-	/*** usado para flexibilizar o layout ***/
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;	
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 #banner img{
@@ -132,13 +136,11 @@ nav li:hover ul{
 
 #banner h1{
 	position: absolute;
-	max-width: 1024px;
-	text-align: center;
 	color: #ffffff;
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 4em;
-	text-transform: uppercase; /*maiúsculo*/
+	font-size: 1.7em;
+	text-transform: uppercase; /* maiúsculo */
 }
 
 /*** heading ***/
@@ -163,7 +165,54 @@ nav li:hover ul{
 	color: #076bb2;
 }
 
-/************ Formulário de contato **********/
+#github{
+		margin-left: 10px;
+	}
+
+#video{
+    max-width: 100%;
+}
+
+#video{
+		margin-left: 10px;
+	}
+
+/********** bloco ***********/
+
+#destaque{
+	max-width: 1024px;
+	height: 320px;
+}
+
+.bloco{
+	width: 30.76%; /*-- (315/1024px)*100 --*/
+	height: 320px;
+	float: left;
+	margin-left: 1.8%; /*--- (20px/1024px)*100--*/
+	border: 1px solid #dedede;
+	text-align: center;
+	position: relative; /*posicionamento do botão */
+}
+
+.bloco p{
+	padding: 0px 20px 0px 20px;
+	text-align: left;
+}
+
+.bloco a{
+	width: 80px;
+	padding: 10px 0px 10px 0px;
+	background-color: #1e73be;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+/************ Formulario de contato ***********/
+
 #contato{
 	padding-top: 80px;
 	width: 70%;
@@ -175,12 +224,12 @@ nav li:hover ul{
 	padding: 10px;
 	border-radius: 5px;
 	border: 1px solid #cc470d;
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
 }
 
 #contato textarea{
 	width: 100%;
-	padding: 10px 10px 40px 10px;
+	padding: 20px 10px 40px 10px;
 	border-radius: 5px;
 	border: 1px solid #cc470d;
 	margin-bottom: 20px;
@@ -192,11 +241,12 @@ nav li:hover ul{
 	border-radius: 5px;
 	border: 1px solid #000000;
 	padding: 10px 25px 10px 25px;
-	color: #ffffff;
+	color: #ffffff; 
 }
 
 
-/************ Rodapé *************/
+
+/**************  Rodapé *****************/
 footer{
 	width: 100%;
 	background-color: #e15a1f;
@@ -205,16 +255,66 @@ footer{
 	padding-bottom: 15px;
 	text-align: center;
 	color: #ffffff;
-	font-size: 0.75em;	
-}
+	font-style: 0.75em;
 
-/*********** Tratamento responsivo *************/
+}
 
 /******* imagens do site *******/
 img {
 	max-width: 100%; /* todas as imagens do site ficam responsivas */
 }
 
+/********* 1º ponto de quebra **********/
+@media screen and (max-width: 1058px){
+	/***** principal *****/
+	body{
+		margin: 0;
+	}
+
+	#main{
+		margin: 0;
+	}
+}
+
+/********* 2º ponto de quebra ***********/
+@media screen and (max-width: 1024px){
+	#banner{
+		margin-top: 75px;
+		margin-top: 75px;
+	}
+}
+
+
+/********* 3º ponto de quebra **********/
+@media screen and (max-width: 922px){
+	#banner{
+		margin-top: 60px;
+	}
+    
+    #main{
+        margin: 0;
+}
+
+}
+
+/********* 4º ponto de quebra **********/
+@media screen and (max-width: 768px){
+	#banner{
+		margin-top: 30px;
+		margin-top: 30px;
+	}
+    
+    #main{
+        margin: 0;
+}
+
+    h1{
+      text-align: center;  
+}
+
+    .bloco p{
+       margin-top: 10px;
+}
 /************* Smartphone ***************/
 
 @media screen and (max-width: 480px){
@@ -223,24 +323,29 @@ img {
 
 	body{
 		margin: 0px;
+
 	}
 
 	#main{
 		margin: 0px;
-	}
+}
 
-	/********** cabeçalho *********/
-	header{
-		margin-bottom: 0px;
-		text-align: center; /*centraliza tudo*/
-	}
-
-	header img{
-		margin-top: 0px;
-		margin-left: 0px;
-	}
 	
 	/********** menu **********/
+
+	/*Cabeçalho*/
+
+	header{
+	margin-bottom: 0px;
+	text-align: center;/*centraliza tudo*/
+}
+
+header img{
+	margin-top: 0px;
+	margin-left: 0px;
+	height: 130px;
+	padding-top: 10px;
+	}
 	.Mobile{
 		display: block;
 		background-color: #e15a1f;
@@ -272,27 +377,25 @@ img {
 		background-color: #044364;
 	}
 
-	nav li ul li a{
+	nav li ul a{
 		background-color: #cf5629;
 		padding-left: 40px;
 	}
 
-	/* IMPORTANTE para UX no dispositivo mobile,
-	não exibir o 2º nivel do menu enquanto conteúdo
-	não for clicado	*/
+	/* IMPORTANTE para UX no dispositivo mobile, não exibir o 2º nivel do menu enquanto conteúdo não for clicado */
 	nav li:hover ul{
 		display: none;
 	}
 
-	/***** banner ******/
+	/*** banner ****/
 	#banner{
-		margin-top: 118px;
-		height: 0;			
+		margin-top: 135px;
+		height: 0;
 	}
 
-	#banner h1{		
-		font-size: 1.5em;	
-		text-align: center;	
+	#banner h1{
+		font-size: 1.5em;
+		text-align: center;
 	}
 
 	/*** heading ***/
@@ -305,5 +408,21 @@ img {
 	#heading h2{
 		font-size: 1.2em;
 	}
+
+	/*** blocos ***/
+	#destaque{
+		max-width: 315px;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	.bloco{
+		width: 100%;
+		height: 320px;
+		float: none;
+		margin: 0;
+		margin-bottom: 20px;
+	}
 	
 }
+	}

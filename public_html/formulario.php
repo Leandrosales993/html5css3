@@ -11,7 +11,7 @@
 	 
 	//Configurações do email, ajustar conforme necessidade
 	
-	$email_destinatario = "leandrosales993@email.com"; // qualquer email pode receber os dados
+	$email_destinatario = "leandrosales993@gmail.com"; // qualquer email pode receber os dados
 	$email_assunto = "Contato do site HTML5 CSS3";
 	
 	 
