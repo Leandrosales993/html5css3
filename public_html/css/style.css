@@ -173,10 +173,6 @@ nav li:hover ul{
     max-width: 100%;
 }
 
-#video{
-		margin-left: 10px;
-	}
-
 /********** bloco ***********/
 
 #destaque{
@@ -280,7 +276,6 @@ img {
 @media screen and (max-width: 1024px){
 	#banner{
 		margin-top: 75px;
-		margin-top: 75px;
 	}
 }
 
@@ -301,7 +296,6 @@ img {
 @media screen and (max-width: 768px){
 	#banner{
 		margin-top: 30px;
-		margin-top: 30px;
 	}
     
     #main{
@@ -315,6 +309,7 @@ img {
     .bloco p{
        margin-top: 10px;
 }
+}	
 /************* Smartphone ***************/
 
 @media screen and (max-width: 480px){
